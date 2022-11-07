@@ -1,0 +1,44 @@
+*{
+				box-sizing: border-box;
+				transition: 0.2s;
+}
+
+.container{
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+}
+
+.box{
+				height: 300px;
+				width: 300px;
+			
+}
+
+.top, .bottom{
+				border: 2px solid black;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				height: 50%;
+				border-radius: 10px;
+}
+
+.comp, .player, .btn{
+				height: 100px;
+				width: 100px;
+				background-size:100% 100%;
+				background-color: white;
+				cursor: pointer;
+}
+
+.btn:active{
+				transform: scale(0.9);
+}
+
+
+
+
+#result{text-align: center;}

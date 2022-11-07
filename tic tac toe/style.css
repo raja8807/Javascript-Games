@@ -1,0 +1,44 @@
+*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				transition: 0.2s;
+}
+
+.container{
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+}
+
+.game{
+				border: 1px solid black;
+				display: grid;
+				grid-template-columns: 100px 100px 100px;
+}
+
+.cell{
+				height: 100px;
+				border: 1px solid black;
+				border-radius: 5px;
+				margin: 5px;
+}
+
+.occupied-x, .occupied-o{
+				font-size: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+}
+
+.occupied-x::after{
+				content: "x";
+				color: red;
+}
+
+.occupied-o::after{
+				content: "o";
+				color: blue;
+}
